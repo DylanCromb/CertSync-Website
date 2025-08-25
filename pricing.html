@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pricing — CertSync</title>
+  <meta name="theme-color" content="#9aaab6" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: { brand: {50: '#cddde9', 100: '#c8d9e7', 200: '#c5d7e6', 300: '#c3d5e5', 400: '#c1d4e4', 500: '#b2c3d2', 600: '#9aaab6', 700: '#7d8a94', 800: '#646e77', 900: '#4d555b'} },
+          fontFamily: { sans: ['Inter','ui-sans-serif','system-ui','Segoe UI','Roboto','Helvetica','Arial'] }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>html:focus-within { scroll-behavior: smooth; } .shadow-soft { box-shadow: 0 10px 30px rgba(2,6,23,.08), 0 4px 10px rgba(2,6,23,.04); }</style>
+</head>
+<body class="font-sans antialiased text-slate-800 bg-gradient-to-b from-white to-slate-50">
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/75 border-b border-slate-200">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3">
+      <a class="flex items-center gap-2" href="index.html">
+        <img src="assets/logo.svg" alt="CertSync logo" class="h-8 w-8" />
+        <span class="font-extrabold text-slate-900 text-lg tracking-tight">CertSync</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8" aria-label="Primary">
+        <a href="index.html" class="hover:text-brand-700">Home</a>
+        <a href="about.html" class="hover:text-brand-700">About</a>
+        <a href="pricing.html" class="text-brand-700 font-semibold">Pricing</a>
+        <a href="policy.html" class="hover:text-brand-700">Policy</a>
+        <a href="contact.html" class="hover:text-brand-700">Contact</a>
+      </nav>
+      <a href="contact.html" class="hidden md:inline-block px-3 py-2 rounded-lg bg-brand-600 text-white hover:bg-brand-700 shadow-soft">Get started</a>
+      <button id="menuBtn" class="md:hidden p-2 rounded-lg border border-slate-300" aria-controls="mnav" aria-expanded="false" aria-label="Open menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mnav" class="md:hidden hidden border-t border-slate-200 px-4 pb-4">
+      <div class="flex flex-col gap-2 pt-3">
+        <a href="index.html" class="px-3 py-2 rounded hover:bg-slate-100">Home</a>
+        <a href="about.html" class="px-3 py-2 rounded hover:bg-slate-100">About</a>
+        <a href="pricing.html" class="px-3 py-2 rounded hover:bg-slate-100">Pricing</a>
+        <a href="policy.html" class="px-3 py-2 rounded hover:bg-slate-100">Policy</a>
+        <a href="contact.html" class="px-3 py-2 rounded hover:bg-slate-100">Contact</a>
+      </div>
+    </div>
+  </header>
+  
+<main class="max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-24">
+  <h1 class="text-4xl font-extrabold tracking-tight text-slate-900">Simple pricing</h1>
+  <p class="mt-2 text-slate-600 max-w-2xl">Start free, then scale with your team. Switch plans anytime.</p>
+  <div class="mt-10 grid md:grid-cols-3 gap-6">
+    <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft flex flex-col"><h3 class="font-semibold text-slate-900">Starter</h3><div class="mt-2 text-4xl font-extrabold">$0<span class="text-base font-medium text-slate-600"> /mo</span></div><ul class="mt-4 space-y-2 text-slate-600"><li>Up to 10 staff</li><li>Core features</li><li>Email reminders</li></ul><a href="contact.html" class="mt-6 inline-block text-center px-4 py-2 rounded-lg bg-brand-600 text-white hover:bg-brand-700">Get started</a></div>
+    <div class="rounded-2xl border-2 border-brand-600 bg-white p-6 shadow-soft flex flex-col"><h3 class="font-semibold text-slate-900">Pro</h3><div class="mt-2 text-4xl font-extrabold">$49<span class="text-base font-medium text-slate-600"> /mo</span></div><ul class="mt-4 space-y-2 text-slate-600"><li>Up to 100 staff</li><li>SMS reminders</li><li>Advanced reporting</li></ul><a href="contact.html" class="mt-6 inline-block text-center px-4 py-2 rounded-lg bg-brand-600 text-white hover:bg-brand-700">Start Pro</a></div>
+    <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-soft flex flex-col"><h3 class="font-semibold text-slate-900">Organisation</h3><div class="mt-2 text-4xl font-extrabold">Custom</div><ul class="mt-4 space-y-2 text-slate-600"><li>Unlimited staff</li><li>SSO & integrations</li><li>Dedicated support</li></ul><a href="contact.html" class="mt-6 inline-block text-center px-4 py-2 rounded-lg border border-slate-300 hover:bg-slate-100">Contact sales</a></div>
+  </div>
+</main>
+
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <a class="flex items-center gap-2" href="index.html">
+          <img src="assets/logo.svg" alt="" class="h-6 w-6" />
+          <span class="font-extrabold text-slate-900">CertSync</span>
+        </a>
+        <nav class="flex gap-5 text-sm text-slate-600">
+          <a href="index.html" class="hover:text-brand-700">Home</a>
+          <a href="about.html" class="hover:text-brand-700">About</a>
+          <a href="pricing.html" class="hover:text-brand-700">Pricing</a>
+          <a href="policy.html" class="hover:text-brand-700">Policy</a>
+          <a href="contact.html" class="hover:text-brand-700">Contact</a>
+        </nav>
+      </div>
+      <p class="text-xs text-slate-500 mt-6">© <span id="year"></span> CertSync. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    const btn = document.getElementById('menuBtn'); const mnav = document.getElementById('mnav');
+    btn?.addEventListener('click', () => { const open = mnav.classList.contains('hidden') ? 'true' : 'false'; mnav.classList.toggle('hidden'); btn.setAttribute('aria-expanded', open); });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
